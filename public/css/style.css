@@ -33,3 +33,235 @@ body {
 #loadingLogo {
   width: 7vw;
 }
+
+#headerContainer {
+  z-index: 40;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 10vh;
+  border-radius: 0 0 3vh 3vh;
+  box-shadow: 0 0 5vh #46464625;
+}
+
+#headerLeftContainer {
+  padding-left: 3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  float: left;
+  width: 77vw;
+  height: 10vh;
+}
+
+#headerRightContainer {
+  padding-right: 3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  float: left;
+  width: 17vw;
+  height: 10vh;
+}
+
+#headerLogo {
+  height: 6vh;
+}
+
+.menu {
+  cursor: pointer;
+  letter-spacing: -2px;
+  font-size: 3vh;
+  margin-left: 2vw;
+  font-weight: 400;
+}
+
+.menu.menuSelected {
+  cursor: default;
+  font-weight: 700;
+}
+
+.containers {
+  color: white;
+  margin-top: 10vh;
+  padding-top: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  width: 90vw;
+  height: 85vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.mainContentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+}
+
+#mainContentContainer1 {
+  width: 100%;
+  height: 30vh;
+  flex-direction: row;
+}
+
+#mainContentContainer2 {
+  width: 100%;
+  height: 65vh;
+  flex-direction: row;
+}
+
+.mainContent {
+  display: flex;
+  padding: 3vh 2vw 3vh 2vw;
+  border-radius: 2vh;
+}
+
+.mainContent0 {
+  flex-direction: column;
+  width: calc(100% - 6vw);
+  height: 59vh;
+}
+
+.mainContent1 {
+  flex-direction: column;
+  width: calc(100% - 4vw);
+  height: 24vh;
+}
+
+.mainContent2 {
+  flex-direction: column;
+  width: calc(50% - 5vw);
+  height: 24vh;
+}
+
+.mainContentTitle {
+  line-height: 5vh;
+  font-size: 4vh;
+  font-weight: 700;
+}
+
+.arc {
+  font-size: 5vh;
+}
+
+.mainContentSubtitle {
+  font-size: 2vh;
+}
+
+#mainContent1 {
+  background: url("/public/resources/background1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#mainContent2 {
+  background: url("/public/resources/background2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#mainContent3 {
+  background: url("/public/resources/background3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#mainContent4 {
+  background: url("/public/resources/background4.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#mainContent5 {
+  background: url("/public/resources/background5.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#mainContent6 {
+  background: url("/public/resources/background6.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.mainContentTitleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 50%;
+}
+
+.mainContentButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 50%;
+}
+
+.mainContentButton {
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #fff;
+  padding: 1.5vh 2vw 1.5vh 2vw;
+  border-radius: 5vh;
+  font-size: 2vh;
+}
+
+#mainContent1Button {
+  color: #4349ee;
+}
+
+#mainContent2Button {
+  color: #57c381;
+}
+
+#mainContent3Button {
+  color: #f3ac5a;
+}
+
+#mainContent4Button {
+  color: #f37166;
+}
+
+#mainContent5Button {
+  color: #4d53b2;
+}
+
+#mainContent6Button {
+  color: #c465d2;
+}
+
+#mainContentContainer2Left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  height: 100%;
+}
+
+#mainContentContainer2Right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+}
+
+.mainContentContainerVertical {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 30vh;
+}
