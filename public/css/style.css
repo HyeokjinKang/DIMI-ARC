@@ -117,6 +117,7 @@ body {
 }
 
 .mainContent {
+  box-shadow: 0 1vh 2vh #46464625;
   display: flex;
   padding: 3vh 2vw 3vh 2vw;
   border-radius: 2vh;
