@@ -86,7 +86,11 @@ body {
 }
 
 .containers {
-  color: white;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: black;
   margin-top: 10vh;
   padding-top: 5vh;
   padding-left: 5vw;
@@ -97,7 +101,12 @@ body {
   overflow-y: auto;
 }
 
+.containers.show {
+  display: initial;
+}
+
 .mainContentContainer {
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -265,4 +274,123 @@ body {
   justify-content: space-between;
   width: 100%;
   height: 30vh;
+}
+
+#mainContainer {
+  z-index: 10;
+}
+
+#applistContainer {
+  z-index: 9;
+}
+
+#createrContainer {
+  z-index: 8;
+}
+
+#loginContainer {
+  z-index: 7;
+}
+
+h1 {
+  margin: 0;
+}
+
+.rowContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.link {
+  cursor: pointer;
+  margin-left: 0.5vw;
+  margin-bottom: 0.7vh;
+}
+
+.listContainer {
+  overflow-x: scroll;
+  margin-top: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-bottom: 5vh;
+  width: 80vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.listAppContainer {
+  cursor: pointer;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  width: 7vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.appIcon {
+  border-radius: 2vh;
+  width: 5vw;
+  height: 5vw;
+  box-shadow: 0 0 5px rgba(68, 68, 68, 0.1);
+}
+
+.appTitle {
+  overflow: hidden;
+  width: 7vw;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  font-size: 2vh;
+  font-weight: 600;
+  margin-top: 2vh;
+}
+
+.arrowContainer {
+  pointer-events: none;
+  position: absolute;
+  width: 90vw;
+  margin-top: 5vh;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.arrowIcon {
+  height: 20vh;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #888;
+}
+
+#notLogined {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

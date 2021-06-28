@@ -16,15 +16,15 @@
   <div id="headerContainer">
     <div id="headerLeftContainer">
       <img src="/public/resources/blueLogo.svg" alt="DIMIARC." id="headerLogo">
-      <span class="menu menuSelected">메인</span>
-      <span class="menu">앱 리스트</span>
-      <span class="menu">크리에이터</span>
+      <span class="menu menuSelected" onclick="screen(0)">메인</span>
+      <span class="menu" onclick="screen(1)">앱 리스트</span>
+      <span class="menu" onclick="screen(2)">크리에이터</span>
     </div>
     <div id="headerRightContainer">
       <span class="menu">로그인</span>
     </div>
   </div>
-  <div id="mainContainer" class="containers">
+  <div id="mainContainer" class="containers show">
     <div id="mainContentContainer1" class="mainContentContainer">
       <div class="mainContent mainContent2" id="mainContent1">
         <div class="mainContentTitleContainer">
@@ -95,6 +95,202 @@
         </div>
       </div>
     </div>
+  </div>
+  <div id="applistContainer" class="containers">
+    <div class="rowContainer">
+      <h1>오늘의 신규 서비스</h1>
+      <span class="link">전체 보기</span>
+    </div>
+    <div class="arrowContainer">
+      <img src="/public/resources/left_arrow.svg" class="arrowIcon">
+      <img src="/public/resources/right_arrow.svg" class="arrowIcon">
+    </div>
+    <div class="listContainer">
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">너무 길면 이렇게 아래로 내려감</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+    </div>
+    <div class="rowContainer">
+      <h1>요즘 이런게 인기래요</h1>
+      <span class="link">전체 보기</span>
+    </div>
+    <div class="arrowContainer">
+      <img src="/public/resources/left_arrow.svg" class="arrowIcon">
+      <img src="/public/resources/right_arrow.svg" class="arrowIcon">
+    </div>
+    <div class="listContainer">
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">너무 길면 이렇게 아래로 내려감</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+    </div>
+    <div class="rowContainer">
+      <h1>역시 게임이 최고죠</h1>
+      <span class="link">전체 보기</span>
+    </div>
+    <div class="arrowContainer">
+      <img src="/public/resources/left_arrow.svg" class="arrowIcon">
+      <img src="/public/resources/right_arrow.svg" class="arrowIcon">
+    </div>
+    <div class="listContainer">
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">너무 길면 이렇게 아래로 내려감</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+      <div class="listAppContainer">
+        <img src="/public/resources/app_icon.png" class="appIcon">
+        <span class="appTitle">APP NAME</span>
+      </div>
+    </div>
+  </div>
+  <div id="createrContainer" class="containers">
+    <div id="notLogined">
+      <span>로그인이 필요한 기능입니다.</span>
+    </div>
+  </div>
+  <div id="loginContainer" class="containers">
+
   </div>
   <script src="/public/js/script.js"></script>
 </body>
